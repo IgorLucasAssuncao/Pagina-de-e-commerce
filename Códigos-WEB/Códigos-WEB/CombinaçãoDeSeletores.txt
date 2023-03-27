@@ -1,0 +1,22 @@
+Regra CSS
+
+
+A,B{......} Os dois ganham os próximos atributos
+P,div{
+    background-color=blue;
+}
+
+AB{.....} Elementos que tiverem os dois ao mesmo tempo, uso com classes e IDs
+p.active{
+    color:red;
+}
+
+A B{....} Elementos associados a B, descendentes de elementos associados a A.
+div p{
+    color:black;
+}
+
+A>B{.....}Elementos associados a B, filhos de elementos associados a A
+div>p{
+    color:black;
+}

@@ -1,0 +1,18 @@
+Flex layout
+
+display: flex;
+flex-wrap: wrap ; quedra de linha de acordo com o tamanho da media
+justify-content: space between; --> distância dos elementos 
+padding todas as direções 
+aling-itens: center; alinha os itens no centro;
+
+Grid Layout
+
+{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    max-width: 800px; tamanho máximo do grid
+    margin: 0 auto; margin top e bottom 0, auto direita e esquerda
+    grid-gap: 20px; distância de 20 pixels
+
+}

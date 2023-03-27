@@ -1,0 +1,42 @@
+Responsive Web Design- Responsividade
+
+Basicamente o web site se adapta para os vários dispositivos que pode acessá-lo 
+
+Alguns Recursos para um site responsivo:
+Viewport e resolução de Tela 
+Media Queries
+Layouts flexíveis (flexbox||grid)
+Frameworks(Bootstrap, Materialize, Zurb Foundation, TailwindCss)
+/////////////////////
+CSS Viewport(É a área visível do usuário de uma página web)
+<meta name="viewport" content="width=X,Y,Z">
+
+X= valor fixo em PX ou device-width;
+Y= initial-Scale=1;
+Z= minimum-scale/maximum-scale/user scalable;(pinça para dar zoom)
+
+Viewport width(vw) 
+viewport Height (vh)
+Altura ou largura mínima da viewport(vmin)
+Altura ou largura máxima da viewport(xmax)
+/////////////////////
+Media Queries
+
+Medias possíveis:
+all
+print 
+screen 
+speech 
+braile 
+projection
+
+Condicionais 
+and 
+not
+
+@media screen and (min-width:1001px) and (max-width: 600px) {
+  body {
+    font-size: 16px;
+  }
+  (pode-se alterar as configurações do site todo)
+}

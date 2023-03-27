@@ -1,0 +1,109 @@
+ 
+Tiposdeseletores/
+
+Elemento/
+p {
+  color: red;
+}
+*/
+
+Identificador/
+#myDiv {
+  color: blue;
+}
+*/
+
+class/
+.linhasdecima {
+  color: blue;
+}
+*/
+
+Atributo/
+img[alt] {
+  color: green;
+}
+Atributos em HTML são informações adicionais que você pode adicionar a uma tag para fornecer 
+mais informações ou  controlar o comportamento do elemento. Por exemplo, a tag <img> 
+tem vários atributos, como "src", "alt" e "width", que são usados para especificar a localização da imagem, uma descrição alternativa 
+para a imagem e a largura da imagem, respectivamente.
+
+Em CSS, os seletores de atributos permitem que você selecione elementos com base em um 
+ou mais atributos que eles possuem. Por exemplo, o seletor [href] seleciona todos os elementos
+ que possuem o atributo "href", como links em HTML.
+
+O uso de atributos pode ajudar a tornar seu HTML mais informativo e semântico, permitindo que
+ os mecanismos de pesquisa e as tecnologias assistivas identifiquem e entendam melhor o conteúdo da sua página.
+*/
+
+PseudoClasse/
+a:hover {       (todos os elementos "a" a cor fica vermelha)
+  color: red;
+}
+:hover - Seleciona um elemento quando o mouse passa sobre ele.
+:active - Seleciona um elemento quando está sendo clicado.
+:focus - Seleciona um elemento quando ele recebe o foco.
+:visited - Seleciona um link que já foi visitado.
+:link - Seleciona um link que ainda não foi visitado.
+:first-child - Seleciona o primeiro filho de um elemento pai.
+:last-child - Seleciona o último filho de um elemento pai.
+:nth-child() - Seleciona o elemento que corresponde a uma fórmula matemática.
+:nth-last-child() - Seleciona o elemento que corresponde a uma fórmula matemática a partir do final do elemento pai.
+:only-child - Seleciona um elemento que é filho único de seu pai.
+:empty - Seleciona elementos que não possuem filhos.
+:checked - Seleciona um elemento de entrada que está marcado.
+:disabled - Seleciona um elemento de entrada que está desativado.
+:enabled - Seleciona um elemento de entrada que está ativado.
+:not() - Seleciona todos os elementos que não correspondem ao seletor.
+:target - Seleciona o elemento que é o destino da URL atual.
+:lang() - Seleciona elementos que possuem o atributo de idioma especificado.
+:root - Seleciona o elemento raiz do documento (normalmente o elemento html).
+:nth-of-type() - Seleciona o elemento que corresponde a uma fórmula matemática, com base no tipo de elemento.
+:nth-last-of-type() - Seleciona o elemento que corresponde a uma fórmula matemática, com base no tipo de elemento, a partir do final do elemento pai.
+
+/
+
+PseudoElemento/
+li::before {
+  content: "\2022";
+  margin-right: 10px;
+}
+::before: adiciona conteúdo antes de um elemento HTML
+::after: adiciona conteúdo após um elemento HTML
+::first-letter: seleciona a primeira letra de um elemento de texto
+::first-line: seleciona a primeira linha de um elemento de texto
+::selection: seleciona o texto selecionado pelo usuário na página
+::placeholder: seleciona o texto de placeholder em um campo de formulário
+::marker: seleciona o marcador de lista em uma lista ordenada ou não ordenada
+::backdrop: seleciona a área atrás de um elemento com transparência
+::cue: seleciona o texto em uma legenda de mídia
+::cue-region: seleciona uma região de legenda de mídia
+::slotted: seleciona elementos que são filhos de um slot em um componente web
+::part: seleciona uma parte de um componente web
+::scrollbar: seleciona a barra de rolagem em um elemento com rolagem
+::thumb: seleciona a alça na barra de rolagem em um elemento com rolagem
+::progress-bar: seleciona a barra de progresso em um elemento de barra de progresso
+::placeholder-shown: seleciona o campo de formulário quando o texto do placeholder é mostrado
+::file-selector-button: seleciona o botão para selecionar arquivos em um campo de formulário de arquivo
+::cue-before: seleciona o texto antes da legenda em uma legenda de mídia
+::cue-after: seleciona o texto após a legenda em uma legenda de mídia
+::fullscreen: seleciona o elemento em modo de tela cheia
+*/
+
+Universal/
+*{
+    backgroun-color: white;
+}
+
+*/
+
+
+
+
+
+
+
+
+
+
+*/
