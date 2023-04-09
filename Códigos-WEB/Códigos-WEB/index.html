@@ -2,38 +2,659 @@
 <html> <!-- Início do documento HTML -->
 
 <head> <!-- Início da seção de cabeçalho -->
-  <meta charset="UTF-8"> <!-- Define o conjunto de caracteres como UTF-8 -->
-  <title>Título da página</title> <!-- Define o título da página exibido na aba do navegador -->
-<link rel="stylesheet" href="estilos.css">
-<meta name="viewport" content=""width-devive, initial-scale="1">
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+  <meta charset="UTF-8">
+  <meta name=”author” content=”Igor Lucas”>
+  <meta name=”creator” content=”Igor Lucas”>
+  <meta name="description" content="Página de e-commerce" />
+  <meta name="viewport" content="" width-devive, initial-scale="1">
+  <title>Kabum!</title> <!-- Define o título da página exibido na aba do navegador -->
+  <!-- Integrando font awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="shortcut icon" href="imgs/kabumicon.jpg"><!-- Colocar icone-->
+
+  <!-- Integrand bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="estilos.css"><!-- Link Css -->
+
 
 </head> <!-- Fim da seção de cabeçalho -->
 
-<body> <!-- Início da seção de corpo -->
-  <nav>
-    <div class="hamburger">
-      <span></span>
-      <span></span>
-      <span></span>
-    </div>
-    <ul class="menu">
-      <li><a href="#">Item 1</a></li>
-      <li><a href="#">Item 2</a></li>
-      <li><a href="#">Item 3</a></li>
-    </ul>
-  </nav>
+<body class=""> <!-- Início da seção de corpo -->
 
-  <h1>Este é um título de primeiro nível</h1> <!-- Cria um cabeçalho de primeiro nível -->
-  <p>Este é um parágrafo de texto simples.</p> <!-- Cria um parágrafo de texto -->
-  <img src="imagem.jpg" alt="Descrição da imagem"> <!-- Insere uma imagem com uma descrição alternativa -->
-  <ul> <!-- Início de uma lista não ordenada -->
-    <li>Item 1</li> <!-- Cria um item da lista -->
-    <li>Item 2</li>
-    <li>Item 3</li>
-  </ul> <!-- Fim da lista não ordenada -->
-  <a href="https://www.google.com/">Isso é um link para o Google</a> <!-- Cria um link para o Google -->
+
+  <header class="container-fluid p-3 rounded-bottom text-bg-primary">
+    <!-- Cabeçalho da página, com o grid do bootstrap-->
+
+    <div class="row justify-content-center altura-row text-bg-primary bg-primary bg-gradient ">
+      <!-- Linha referente as colunas -->
+
+      <div class="col-4 text-bg-primary justify-content-center"><!-- Primeira Coluna -->
+        <img class="logo" src="imgs/kabum.png" alt="">
+      </div>
+
+      <div class="col-4 text-bg-primary border-start border-end border-2  border-light"><!-- Segunda coluna -->
+        <p class="pb-4 pt-4"> Welcome Guest</p>
+
+        <div class="searchbox">
+
+          <input type="text" class="searchtext" placeholder="Pesquisar">
+          <a href="#" class="searchbtn">
+            <i class="fa-solid fa-magnifying-glass fa-lg " style="color: blue;" alt="Lupa"></i>
+          </a>
+
+        </div>
+
+      </div>
+
+
+
+      <div class="colum3 col-4 text-bg-primary"><!-- Terceira coluna -->
+
+        <ul class="lista">
+          <li><a class="text-info" href="#">Sign</a></li>
+          <li><a class="text-info" href="#">Register</a></li>
+          <li><a class="text-info" href="#">My account</a></li>
+          <li><a class="text-info" href="#">Track order</a></li>
+        </ul>
+        <ul class="lista">
+          <li>Cash on Delivery</li>
+          <li>30 day return</li>
+        </ul>
+        <div>
+          <p class=" pcolum3"> 24/7 Customer Service 1800 00 11 22</p>
+        </div>
+        <a href="#"><i class="fas fa-shopping-cart fa-lg icon-carrinho" style="color: #7ed6fb;"></i></a>
+      </div>
+    </div>
+
+  </header>
+
+
+
+  <section id="grid-section">
+
+    <div class="border border-primary border-3 rounded-2">
+      <div class="section-flex">
+
+        <div class="alert alert-success m-0" role="alert">
+          <h4 class="alert-heading">Best Promotions!</h4>
+          <p> Quick Find-Choose product</p>
+          <hr>
+          <p class="mb-0">Find the right product at the right price.</p>
+        </div>
+        <div>
+          <label></label> <!-- define o texto que vai ficar ao lado do campo de input -->
+          <select class="select-section" id="Type">
+            <option selected disable value="">Type</option>
+            <!-- valor que vai aparecer na caixa, está desabilitado e de valor null-->
+            <option value="">Notebook</option><!-- opções que vão aparecer  -->
+            <option value="">Gabinete</option>
+            <option value="">Monitor</option>
+          </select>
+        </div>
+
+        <div>
+          <label></label><!-- define o texto que vai ficar ao lado do campo de input -->
+          <select class="select-section" id="Type">
+            <option selected disable value="">Brand</option>
+            <!-- valor que vai aparecer na caixa, está desabilitado e de valor null-->
+            <option value="">Notebook</option>
+            <option value="">Gabinete</option>
+            <option value="">Monitor</option>
+          </select>
+        </div>
+
+        <div>
+          <label></label>
+          <select class="select-section" id="Type"><!-- define o texto que vai ficar ao lado do campo de input -->
+            <option selected disable value="">Category</option>
+            <!-- valor que vai aparecer na caixa, está desabilitado e de valor null-->
+            <option value="">Notebook</option>
+            <option value="">Gabinete</option>
+            <option value="">Monitor</option>
+          </select>
+        </div>
+      </div>
+
+      <div>
+        <ul class="cifrao">
+          <li>
+            <input type="text" placeholder="From">
+          </li>
+          <li>
+            <input type="text" placeholder="To">
+          </li>
+        </ul>
+      </div>
+
+      <div class="btn-section">
+        <button type="button" class="btn btn-primary wbtn"><i class="fa-solid fa-magnifying-glass fa-lg"></i></button>
+      </div>
+
+    </div>
+
+    <div class="border border-light border-5 bg-dark">
+
+      <div id="carouselExampleCaptions" class="carousel slide bg-dark">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+            aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+            aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+            aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner bg-body-emphasis">
+          <div class="carousel-item active">
+            <img src="imgscarousel/img-note1.png" class="d-block carousel-imgs mx-auto w-75" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5 class="text-info">Macbook 32 GB de RAM</h5>
+              <p class="text-info">Notebook ótimo.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="imgscarousel/img-note2.png" class="d-block carousel-imgs mx-auto w-50" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5 class="text-info">gabinete gamer</h5>
+              <p class="text-info">Gabinete gamer top.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="imgscarousel/img-note3.png" class="d-block carousel-imgs mx-auto w-75" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5 class="text-info">Monitores</h5>
+              <p class="text-info">monitores da Apple top de linha.</p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+
+  </section>
+  <main class="grid-main">
+
+    <div class=" border border-5 border-danger">
+
+      <div class="card" style="width: 18rem;">
+
+        <img src="https://source.unsplash.com/200x200/?technology" class="card-img-top" alt="...">
+        <div class="card-body card-flex">
+          <span><a href="#">Product Description</a></span>
+          <ul class="listaestrela">
+            <li>
+              <i class="fa-solid fa-star" style="color: #ead653; font-size:15px;"></i>
+            </li>
+            <li>
+              <i class="fa-solid fa-star" style="color: #ead653; font-size:15px;"></i>
+            </li>
+            <li>
+              <i class="fa-solid fa-star" style="color: #ead653; font-size:15px;"></i>
+            </li>
+            <li>
+              <i class="fa-solid fa-star" style="color: #ead653; font-size:15px;"></i>
+            </li>
+            <li>
+              <i class="fa-solid fa-star" style="color: #ead653; font-size:15px;"></i>
+            </li>
+
+          </ul>
+          <span class="card-text">R$ 1.000,00</span>
+          <span class="card-text precocortado">R$ 10000,00</span>
+          <span class="card-text precocortado">90% off</span>
+
+        </div>
+
+
+
+      </div>
+      <div class="card" style="width: 18rem;">
+        <img src="https://source.unsplash.com/200x200/?technology" class="card-img-top" alt="...">
+        <div class="card-body card-flex">
+          <span><a href="#">Product Description</a></span>
+          <ul class="listaestrela">
+            <li>
+              <i class="fa-solid fa-star" style="color: #ead653; font-size:15px;"></i>
+            </li>
+            <li>
+              <i class="fa-solid fa-star" style="color: #ead653; font-size:15px;"></i>
+            </li>
+            <li>
+              <i class="fa-solid fa-star" style="color: #ead653; font-size:15px;"></i>
+            </li>
+            <li>
+              <i class="fa-solid fa-star" style="color: #ead653; font-size:15px;"></i>
+            </li>
+            <li>
+              <i class="fa-solid fa-star" style="color: #ead653; font-size:15px;"></i>
+            </li>
+
+          </ul>
+          <span class="card-text">R$ 1.000,00</span>
+          <span class="card-text precocortado">R$ 10000,00</span>
+          <span class="card-text precocortado">90% off</span>
+
+        </div>
+
+
+
+      </div>
+      <div class="card" style="width: 18rem;">
+        <img src="https://source.unsplash.com/200x200/?technology" class="card-img-top" alt="...">
+        <div class="card-body card-flex">
+          <span><a href="#">Product Description</a></span>
+          <ul class="listaestrela">
+            <li>
+              <i class="fa-solid fa-star" style="color: #ead653; font-size:15px;"></i>
+            </li>
+            <li>
+              <i class="fa-solid fa-star" style="color: #ead653; font-size:15px;"></i>
+            </li>
+            <li>
+              <i class="fa-solid fa-star" style="color: #ead653; font-size:15px;"></i>
+            </li>
+            <li>
+              <i class="fa-solid fa-star" style="color: #ead653; font-size:15px;"></i>
+            </li>
+            <li>
+              <i class="fa-solid fa-star" style="color: #ead653; font-size:15px;"></i>
+            </li>
+
+          </ul>
+          <span class="card-text">R$ 1.000,00</span>
+          <span class="card-text precocortado">R$ 10000,00</span>
+          <span class="card-text precocortado">90% off</span>
+
+        </div>
+
+
+
+      </div>
+      <div class="card" style="width: 18rem;">
+        <img src="https://source.unsplash.com/200x200/?technology" class="card-img-top" alt="...">
+        <div class="card-body card-flex">
+          <span><a href="#">Product Description</a></span>
+          <ul class="listaestrela">
+            <li>
+              <i class="fa-solid fa-star" style="color: #ead653; font-size:15px;"></i>
+            </li>
+            <li>
+              <i class="fa-solid fa-star" style="color: #ead653; font-size:15px;"></i>
+            </li>
+            <li>
+              <i class="fa-solid fa-star" style="color: #ead653; font-size:15px;"></i>
+            </li>
+            <li>
+              <i class="fa-solid fa-star" style="color: #ead653; font-size:15px;"></i>
+            </li>
+            <li>
+              <i class="fa-solid fa-star" style="color: #ead653; font-size:15px;"></i>
+            </li>
+
+          </ul>
+          <span class="card-text">R$ 1.000,00</span>
+          <span class="card-text precocortado">R$ 10000,00</span>
+          <span class="card-text precocortado">90% off</span>
+
+        </div>
+
+
+
+      </div>
+      <div class="card" style="width: 18rem;">
+        <img src="https://source.unsplash.com/200x200/?technology" class="card-img-top" alt="...">
+        <div class="card-body card-flex">
+          <span><a href="#">Product Description</a></span>
+          <ul class="listaestrela">
+            <li>
+              <i class="fa-solid fa-star" style="color: #ead653; font-size:15px;"></i>
+            </li>
+            <li>
+              <i class="fa-solid fa-star" style="color: #ead653; font-size:15px;"></i>
+            </li>
+            <li>
+              <i class="fa-solid fa-star" style="color: #ead653; font-size:15px;"></i>
+            </li>
+            <li>
+              <i class="fa-solid fa-star" style="color: #ead653; font-size:15px;"></i>
+            </li>
+            <li>
+              <i class="fa-solid fa-star" style="color: #ead653; font-size:15px;"></i>
+            </li>
+
+          </ul>
+          <span class="card-text">R$ 1.000,00</span>
+          <span class="card-text precocortado">R$ 10000,00</span>
+          <span class="card-text precocortado">90% off</span>
+
+        </div>
+
+
+
+      </div>
+      <div class="card" style="width: 18rem;">
+        <img src="https://source.unsplash.com/200x200/?technology" class="card-img-top" alt="...">
+        <div class="card-body card-flex">
+          <span><a href="#">Product Description</a></span>
+          <ul class="listaestrela">
+            <li>
+              <i class="fa-solid fa-star" style="color: #ead653; font-size:15px;"></i>
+            </li>
+            <li>
+              <i class="fa-solid fa-star" style="color: #ead653; font-size:15px;"></i>
+            </li>
+            <li>
+              <i class="fa-solid fa-star" style="color: #ead653; font-size:15px;"></i>
+            </li>
+            <li>
+              <i class="fa-solid fa-star" style="color: #ead653; font-size:15px;"></i>
+            </li>
+            <li>
+              <i class="fa-solid fa-star" style="color: #ead653; font-size:15px;"></i>
+            </li>
+
+          </ul>
+          <span class="card-text">R$ 1.000,00</span>
+          <span class="card-text precocortado">R$ 10000,00</span>
+          <span class="card-text precocortado">90% off</span>
+
+        </div>
+
+
+
+      </div>
+      <div class="card" style="width: 18rem;">
+        <img src="https://source.unsplash.com/200x200/?technology" class="card-img-top" alt="...">
+        <div class="card-body card-flex">
+          <span><a href="#">Product Description</a></span>
+          <ul class="listaestrela">
+            <li>
+              <i class="fa-solid fa-star" style="color: #ead653; font-size:15px;"></i>
+            </li>
+            <li>
+              <i class="fa-solid fa-star" style="color: #ead653; font-size:15px;"></i>
+            </li>
+            <li>
+              <i class="fa-solid fa-star" style="color: #ead653; font-size:15px;"></i>
+            </li>
+            <li>
+              <i class="fa-solid fa-star" style="color: #ead653; font-size:15px;"></i>
+            </li>
+            <li>
+              <i class="fa-solid fa-star" style="color: #ead653; font-size:15px;"></i>
+            </li>
+
+          </ul>
+          <span class="card-text">R$ 1.000,00</span>
+          <span class="card-text precocortado">R$ 10000,00</span>
+          <span class="card-text precocortado">90% off</span>
+
+        </div>
+
+
+
+      </div>
+      <div class="card" style="width: 18rem;">
+        <img src="https://source.unsplash.com/200x200/?technology" class="card-img-top" alt="...">
+        <div class="card-body card-flex">
+          <span><a href="#">Product Description</a></span>
+          <ul class="listaestrela">
+            <li>
+              <i class="fa-solid fa-star" style="color: #ead653; font-size:15px;"></i>
+            </li>
+            <li>
+              <i class="fa-solid fa-star" style="color: #ead653; font-size:15px;"></i>
+            </li>
+            <li>
+              <i class="fa-solid fa-star" style="color: #ead653; font-size:15px;"></i>
+            </li>
+            <li>
+              <i class="fa-solid fa-star" style="color: #ead653; font-size:15px;"></i>
+            </li>
+            <li>
+              <i class="fa-solid fa-star" style="color: #ead653; font-size:15px;"></i>
+            </li>
+
+          </ul>
+          <span class="card-text">R$ 1.000,00</span>
+          <span class="card-text precocortado">R$ 10000,00</span>
+          <span class="card-text precocortado">90% off</span>
+
+        </div>
+
+
+
+      </div>
+      <div class="card" style="width: 18rem;">
+        <img src="https://source.unsplash.com/200x200/?technology" class="card-img-top" alt="...">
+        <div class="card-body card-flex">
+          <span><a href="#">Product Description</a></span>
+          <ul class="listaestrela">
+            <li>
+              <i class="fa-solid fa-star" style="color: #ead653; font-size:15px;"></i>
+            </li>
+            <li>
+              <i class="fa-solid fa-star" style="color: #ead653; font-size:15px;"></i>
+            </li>
+            <li>
+              <i class="fa-solid fa-star" style="color: #ead653; font-size:15px;"></i>
+            </li>
+            <li>
+              <i class="fa-solid fa-star" style="color: #ead653; font-size:15px;"></i>
+            </li>
+            <li>
+              <i class="fa-solid fa-star" style="color: #ead653; font-size:15px;"></i>
+            </li>
+          </ul>
+          
+          <span class="card-text">R$ 1.000,00</span>
+          <span class="card-text precocortado">R$ 10000,00</span>
+          <span class="card-text precocortado">90% off</span>
+
+        </div>
+
+
+
+      </div>
+    </div>
+
+    <aside class=" bg-body-tertiary ">         <!-- Aside -->
+
+      <h1 class="h1aside text-primary">Most reviewed items</h1>
+      
+      <div class="MostReview border-primary border border-1 ">
+
+        <div class="asideitems border-bottom border-5 border-dark">
+
+          <img class="imgMostReview" src="https://source.unsplash.com/200x200/?technology" alt="">
+
+          <span><a href="#">Product Description</a></span>
+        </br>
+          <span class="card-text">R$ 1.000,00</span>
+          <ul class="listaestrelaAside">
+            <li>
+              <i class="fa-solid fa-star" style="color: #ead653; font-size:10px;"></i>
+            </li>
+            <li>
+              <i class="fa-solid fa-star" style="color: #ead653; font-size:10px;"></i>
+            </li>
+            <li>
+              <i class="fa-solid fa-star" style="color: #ead653; font-size:10px;"></i>
+            </li>
+            <li>
+              <i class="fa-solid fa-star" style="color: #ead653; font-size:10px;"></i>
+            </li>
+            <li>
+              <i class="fa-solid fa-star" style="color: #ead653; font-size:10px;"></i>
+            </li>
+
+        </div>
+
+        <div class="asideitems border-bottom border-5 border-dark">
+          <img class="imgMostReview" src="https://source.unsplash.com/200x200/?technology" alt="">
+          <span><a href="#">Product Description</a></span>
+        </br>
+          <span class="card-text">R$ 1.000,00</span>
+          <ul class="listaestrelaAside">
+            <li>
+              <i class="fa-solid fa-star" style="color: #ead653; font-size:10px;"></i>
+            </li>
+            <li>
+              <i class="fa-solid fa-star" style="color: #ead653; font-size:10px;"></i>
+            </li>
+            <li>
+              <i class="fa-solid fa-star" style="color: #ead653; font-size:10px;"></i>
+            </li>
+            <li>
+              <i class="fa-solid fa-star" style="color: #ead653; font-size:10px;"></i>
+            </li>
+            <li>
+              <i class="fa-solid fa-star" style="color: #ead653; font-size:10px;"></i>
+            </li>
+
+        </div>
+
+        <div class="asideitems border-bottom border-5 border-dark">
+          <img class="imgMostReview" src="https://source.unsplash.com/200x200/?technology" alt="">
+          <span><a href="#">Product Description</a></span>
+        </br>
+          <span class="card-text">R$ 1.000,00</span>
+          <ul class="listaestrelaAside">
+            <li>
+              <i class="fa-solid fa-star" style="color: #ead653; font-size:10px;"></i>
+            </li>
+            <li>
+              <i class="fa-solid fa-star" style="color: #ead653; font-size:10px;"></i>
+            </li>
+            <li>
+              <i class="fa-solid fa-star" style="color: #ead653; font-size:10px;"></i>
+            </li>
+            <li>
+              <i class="fa-solid fa-star" style="color: #ead653; font-size:10px;"></i>
+            </li>
+            <li>
+              <i class="fa-solid fa-star" style="color: #ead653; font-size:10px;"></i>
+            </li>
+
+        </div>
+
+        <div class="asideitems border-bottom border-5 border-dark">
+          <img class="imgMostReview" src="https://source.unsplash.com/200x200/?technology" alt="">
+          <span><a href="#">Product Description</a></span>
+        </br>
+          <span class="card-text">R$ 1.000,00</span>
+          <ul class="listaestrelaAside">
+            <li>
+              <i class="fa-solid fa-star" style="color: #ead653; font-size:10px;"></i>
+            </li>
+            <li>
+              <i class="fa-solid fa-star" style="color: #ead653; font-size:10px;"></i>
+            </li>
+            <li>
+              <i class="fa-solid fa-star" style="color: #ead653; font-size:10px;"></i>
+            </li>
+            <li>
+              <i class="fa-solid fa-star" style="color: #ead653; font-size:10px;"></i>
+            </li>
+            <li>
+              <i class="fa-solid fa-star" style="color: #ead653; font-size:10px;"></i>
+            </li>
+
+        </div>
+
+        <div class="asideitems ">
+          <img class="imgMostReview" src="https://source.unsplash.com/200x200/?technology" alt="">
+          <span><a href="#">Product Description</a></span>
+           </br>
+          <span class="card-text">R$ 1.000,00</span>
+          <ul class="listaestrelaAside">
+            <li>
+              <i class="fa-solid fa-star" style="color: #ead653; font-size:9px;"></i>
+            </li>
+            <li>
+              <i class="fa-solid fa-star" style="color: #ead653; font-size:9px;"></i>
+            </li>
+            <li>
+              <i class="fa-solid fa-star" style="color: #ead653; font-size:9px;"></i>
+            </li>
+            <li>
+              <i class="fa-solid fa-star" style="color: #ead653; font-size:9px;"></i>
+            </li>
+            <li>
+              <i class="fa-solid fa-star" style="color: #ead653; font-size:9px;"></i>
+            </li>
+        </div>
+
+        <div class="btn-section">
+          <button type="button" class="btn btn-primary seebtn">See More</button>
+        </div>
+  
+      </div>
+
+      <div class="Newsletter border-primary border border-1 ">
+        <h2>Newsletter</h2>
+        <p>Sign Up for Newsletter</p>
+        <input type="text">
+        <button type="button" class="btn btn-primary newsbtn">Join Now</button>
+
+      </div>
+    </aside>
+
+  </main>
+
+  <footer>
+    <div class="pagamento">
+    <h3>Formas de pagamento</h3>
+    <ul>
+      <li> <i class="fa-brands fa-cc-visa" style="font-size:50px;"></i></li>
+      <li><i class="fa-brands fa-cc-mastercard" style="font-size:50px;"></i></li>
+      <li><i class="fa-brands fa-cc-paypal" style="font-size:50px;"></i></li>
+    </ul>
+  </div>
+  <div class="links">
+    <h3>Links rápidos</h3>
+    <ul>
+      <li><a href="#">Página inicial</a></li>
+      <li><a href="#">Sobre nós</a></li>
+      <li><a href="#">Contato</a></li>
+    </ul>
+  </div>
+  <div class="redes-sociais">
+    <h3>Redes sociais</h3>
+    <ul>
+      <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+      <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+      <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+    </ul>
+  </div>
+  <div class="contato">
+    <h3>Formas de contato</h3>
+    <ul>
+      <li>Telefone: (00) 1234-5678</li>
+      <li>E-mail: contato@empresa.com</li>
+      <li>Endereço: Rua dos exemplos, 123 - São Paulo/SP</li>
+    </ul>
+  </div>
+
+
+  </footer>
 </body> <!-- Fim da seção de corpo -->
 
 </html> <!-- Fim do documento HTML -->

@@ -1,74 +1,311 @@
-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #333;
-    color: #fff;
-    padding: 10px;
-  }
+body{
+
   
-  .hamburger {
-    display: none;
-    width: 30px;
-    height: 25px;
-    position: relative;
-    cursor: pointer;
+} 
+/* Path: Códigos-WEB\Códigos-WEB\estilos.css */
+.logo{
+  height: 140px;
+  width: 200px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin-left: 150px;
+}
+
+
+/* Estilizando a barra de pesquisa */
+.searchbox{
+  position: absolute;
+  display: flex;
+  justify-content: space-between;/* aLINHA OS ITENS HORIZONTALMENTE */
+  align-items: center; /* ALINHA OS ITENS VERTICALMENTE */
+  width: 400px;
+  height: 40px;
+  border-radius: 20px;
+  border: 2px solid blue;
+  padding: 4px;
+  font-size: 20px;
+  background-color: #7ed6fb;
+  float: left;
+  margin-left: 2px;
+}
+.searchtext{
+  border: none;
+  outline: none;
+  background: none;
+  padding: 0;
+  line-height: 40px;
+  color:white;
+  transition: 10s;
+}
+.searchbtn{
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
+.searchbox:hover > .searchtext{
+  background: #e84118;
+  width: 240px;
+}
+/* fim da estilização da searchbox */
+
+*{
+  font-size: 16px;
+}
+.colum3 > ul:first-child{ /*seleciona o primeiro filho de div*/
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  padding-left: 10px;
+} 
+.colum3 > ul:nth-child(2){/*seleciona o segundo filho de div*/
+  display: flex;
+  justify-content: start;
+  list-style: none;
+  margin: 0;
+  margin-left: -35px;
+  padding-top: 30px;
+} 
+
+.altura-row{
+  max-height: 150px; 
+  overflow: hidden;
+}
+
+li {
+  margin: 0 10px;
+}
+
+.icon-carrinho{
+  float: right;
+ margin-right: 150px;
+ font-size: 50px;
+ margin-top: -40px;
+}
+.pcolum3{ /*paragrafo coluna 3*/
+ margin-left: 9px;
+}
+a{
+  text-decoration: none;
+}
+/* Path: Códigos-WEB\Códigos-WEB\estilos.css */
+
+#grid-section{ /*seleciona o id grid-section para a div do lado do carousel*/
+  display: grid;
+  grid-template-columns: 300px 900px;
+  grid-template-rows: 500px;
+  grid-gap: 10px;
+  padding: 10px;
+  justify-content: center;
+}
+#grid-section:first-child{ /*seleciona o primeiro filho de grid-section*/
+  grid-column: 1/1;
+  grid-row: 1/1;
+}
+#grid-section:nth-child(2){/*seleciona o segundo filho de div*/
+  grid-column: 2/2;
+  grid-row: 1/1;
+}
+
+/* Flex da section */
+.section-flex{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: start;
+  gap: 10px;
+  margin-top: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.select-section{
+  width: 200px;
+}
+ul.cifrao{
+  display: flex;
+  flex-direction: column;
+  gap:10px;
+  margin-top: 10px;
+  padding-left:10px;
+  list-style-type: "$";
+}
+.btn-section{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.wbtn{
+  width: 70%;
+}
+/* IMAGENS CAROUSEL */
+.carousel-imgs{
+  align-self: center;
+}
+/* main grid */
+.grid-main{
+  display: grid;
+  grid-template-columns: 900px 300px;
+  grid-template-rows: 400px 400px 400px;
+  grid-gap: 10px;
+  padding: 10px;
+  justify-content: center;
+}
+.grid-main>div{ /*seleciona o primeiro filho de grid-section*/
+  grid-column: 1/1;
+  grid-row: 1/4;
+  flex-wrap: wrap;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  overflow-inline: auto;
+}
+.grid-main>aside{/*seleciona o segundo filho de div*/
+  grid-column: 2/2;
+  grid-row: 1/4;
+  flex-wrap: wrap;
+}
+.flexlistamain{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 1px;
+}
+.listaestrela{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.precocortado{
+  text-decoration: line-through;
+  color: red;
+}
+/* FIM DO MAIN GRID */
+
+/*Aside*/
+.h1aside{
+  text-align: center;
+  margin-top: 10px;
+  font-size: 20px;
+}
+.MostReview{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 20px;
+  margin-right: 5px;
+  margin-left: 5px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+
+}
+.imgMostReview{
+  width: 90px;
+  height: 90px;
+  display: inline;
+  float: left;
+}
+.asideitems{
+  height: 120px;
+  margin-right: 10px;
+  margin-left: 10px;
+  margin-top: 5px;
+}
+.listaestrelaAside{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+ width: 100px;
+ float: right;
+}
+.Mostviewpreco{
+  display: flex;
+  align-items: flex-end;
+}
+.descriptionItems{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.seebtnb{
+  width: 70px;
+}
+
+.Newsletter{
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: flex-start;
+  gap: 10px;
+  margin-right: 5px;
+  margin-left: 5px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  padding-left: 20px;
+}
+.newsbtn{
+  width: 100px;
+  align-self: end;
+}
+/* FIM DO ASIDE */
+/*footer*/
+footer {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, auto);
+  grid-gap: 20px;
+  padding: 20px;
+  background-color: #f1f1f1;
+}
+
+@media only screen and (min-width: 768px) {
+  footer {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;
   }
-  
-  .hamburger span {
-    position: absolute;
-    width: 100%;
-    height: 3px;
-    background-color: #fff;
-    border-radius: 10px;
-    transition: all 0.3s ease-in-out;
-  }
-  
-  .hamburger span:nth-child(1) {
-    top: 0;
-  }
-  
-  .hamburger span:nth-child(2) {
-    top: 11px;
-  }
-  
-  .hamburger span:nth-child(3) {
-    top: 22px;
-  }
-  
-  .hamburger.active span:nth-child(1) {
-    top: 11px;
-    transform: rotate(45deg);
-  }
-  
-  .hamburger.active span:nth-child(2) {
-    opacity: 0;
-  }
-  
-  .hamburger.active span:nth-child(3) {
-    top: 11px;
-    transform: rotate(-45deg);
-  }
-  
-  .menu {
-    display: flex;
-    list-style: none;
-  }
-  
-  .menu li {
-    margin-right: 20px;
-  }
-  
-  .menu a {
-    color: #fff;
-    text-decoration: none;
-  }
-  
-  @media only screen and (max-width: 768px) {
-    .menu {
-      display: none;
-    }
-    .hamburger {
-      display: block;
-    }
-  }
+}
+
+.pagamento, .links, .redes-sociais, .contato {
+  background-color: #fff;
+  padding: 10px;
+}
+
+h3 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 5px;
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+}
+
+i {
+  font-size: 1.5rem;
+  margin-right: 5px;
+}
+/*fazendo a responsividade*/
