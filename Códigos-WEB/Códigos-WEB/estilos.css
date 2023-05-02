@@ -1,7 +1,6 @@
-body{
-
-  
-} 
+html{
+  width: auto;
+}
 /* Path: Códigos-WEB\Códigos-WEB\estilos.css */
 .logo{
   height: 140px;
@@ -309,3 +308,37 @@ i {
   margin-right: 5px;
 }
 /*fazendo a responsividade*/
+@media (max-width: 768px) {
+  /* Estilos para dispositivos móveis */
+  .grid-main {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto;
+    padding: 0;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  .grid-main > div {
+    grid-column: 1/1;
+    grid-row: 1/2;
+    flex-wrap: wrap;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    overflow-inline: auto;
+    width: 100%;
+  }
+
+  .grid-main > aside {
+    grid-column: 1/1;
+    grid-row: 2/3;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  /* Estilos para telas grandes */
+}
+@media only screen and (orientation: landscape) {
+  /* Estilos para dispositivos de orientação paisagem */
+}
