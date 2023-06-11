@@ -98,6 +98,14 @@ fetch("https://diwserver.vps.webdock.cloud/products?page=100")
       console.log(minimo, maximo, category, searchTerm);
       filterProducts(minimo, maximo, category, searchTerm);
     });
+    nameFilter.addEventListener("change", () => {
+      const minimo = min.value;
+      const maximo = max.value;
+      const category = categoryFilter.value;
+      const searchTerm = nameFilter.value;
+      console.log(minimo, maximo, category, searchTerm);
+      filterProducts(minimo, maximo, category, searchTerm);
+    });
 
     // Event listener para o formulário de pesquisa
     const searchForm = document.getElementById("btn-section");
