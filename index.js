@@ -12,7 +12,7 @@ function CarregarCards() {
               <p>Preço: R$${element.price}</p>
               <p class="categoria">Categoria: ${element.category}</p>
               <p>Nota dos usuários: ${element.rating.rate}</p>
-              <a href="../detalhes/detalhes.html?id=${element.id}"><button id="detailsButton" class="card-button" >More Details</button></a>
+              <a href="detalhes.html?id=${element.id}"><button id="detailsButton" class="card-button" >More Details</button></a>
             </div>`;
       });
     });
@@ -62,11 +62,11 @@ fetch("https://diwserver.vps.webdock.cloud/products?page=100")
         article.innerHTML += `
           <div class="produtos" id="${product.id}">
             <img src="${product.image}" alt="">
-            <h5><a href="./detalhes.html?id=${product.id}">${product.title}</a></h5>
+            <h5><a href="detalhes.html?id=${product.id}">${product.title}</a></h5>
             <p>Preço: R$${product.price}</p>
             <p class="categoria">Categoria: ${product.category}</p>
             <p>Nota dos usuários: ${product.rating.rate}</p>
-            <a href="../detalhes/detalhes.html?id=${product.id}"><button id="detailsButton" class="card-button" >More Details</button></a>
+            <a href="detalhes.html?id=${product.id}"><button id="detailsButton" class="card-button" >More Details</button></a>
           </div>`;
       });
     };
@@ -129,7 +129,7 @@ fetch("https://diwserver.vps.webdock.cloud/products?page=220")
         first.innerHTML += `
           <h5 class="text-info">${json.products[index].title}</h5>
           <p class="text-info">R$ ${json.products[index].price},00</p>
-          <a href="../detalhes/detalhes.html?id=${json.products[index].id}"><button id="detailsButton" class="card-button" >More Details</button></a>
+          <a href="detalhes.html?id=${json.products[index].id}"><button id="detailsButton" class="card-button" >More Details</button></a>
           `;
       }
 
@@ -138,7 +138,7 @@ fetch("https://diwserver.vps.webdock.cloud/products?page=220")
         second.innerHTML += `
         <h5 class="text-info">${json.products[index].title}</h5>
         <p class="text-info">R$ ${json.products[index].price},00</p>
-        <a href="../detalhes/detalhes.html?id=${json.products[index].id}"><button id="detailsButton" class="card-button" >More Details</button></a>
+        <a href="detalhes.html?id=${json.products[index].id}"><button id="detailsButton" class="card-button" >More Details</button></a>
         `;
       }
       if (index == 3) {
@@ -146,7 +146,7 @@ fetch("https://diwserver.vps.webdock.cloud/products?page=220")
         third.innerHTML += `
         <h5 class="text-info">${json.products[index].title}</h5>
         <p class="text-info">R$ ${json.products[index].price},00</p>
-        <a href="../detalhes/detalhes.html?id=${json.products[index].id}"><button id="detailsButton" class="card-button" >More Details</button></a>
+        <a href="detalhes.html?id=${json.products[index].id}"><button id="detailsButton" class="card-button" >More Details</button></a>
         `;
       }
     }

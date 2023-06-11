@@ -14,6 +14,6 @@ fetch(`https://diwserver.vps.webdock.cloud/products/${productId}`)
           <p class="categoria">Categoria: ${element.category}</p>
           <p>Nota dos usuários: ${element.rating.rate}</p>
           <p>Descrição: ${element.description}</p>
-          <a href="../detalhes/detalhes.html?id=${element.id}"><button id="detailsButton" class="card-button" >Comprar</button></a>
+          <a href="detalhes.html?id=${element.id}"><button id="detailsButton" class="card-button" >Comprar</button></a>
         </div>`;
   });
